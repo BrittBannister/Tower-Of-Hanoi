@@ -1,14 +1,15 @@
                    TOWER OF HANOI 
-                PARTNER: CHRISTY BODNAR
+        BRITTNEY BANNISTER && CHRISTY BODNAR
                         PLAN        
 
 1. Way to select disc from the top of tower
         1. attach a click handler to pick up top disc of each tower
                 tower.addEventListener('click',function)
-                tower.lastElementChild (to pick up disc)
+                tower.lastElementChild (to pick up the top disc only from each tower)
 2. Way to move disc from tower to tower
         1. click handler on each tower - utilize like above ***
         2. compare size of disc to drop vs top disc of current tower
+            *Want to make sure we have the top disc. (tower.lastElChild)
                 a. if disc is smaller, add disc to top of current tower
                         Compare widths by:
                                 disc1.dataset.width < disc3.dataset.width

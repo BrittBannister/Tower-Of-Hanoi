@@ -10,22 +10,34 @@
 
 <body>
     <h1>Tower Of Hanoi</h1>
+    <h3>Rules of Play</h3>
+
+    <ul id="rules">
+        <li>Transfer all four discs from the left tower to the right tower</li>
+        <li>Only one disc may be moved at a time</li>
+        <li>At no time may a larger disc sit atop a smaller disc</li>
+    </ul>
+    <p>Good Luck and Have Fun!</p>
+
     <div id="main">
         <div class="tower" id="tower1">
-            <div class="disc" id="disc4"></div>
-            <div class="disc" id="disc3"></div>
-            <div class="disc" id="disc2"></div>
-            <div class="disc" id="disc1"></div>
+            <div class="disc" id="disc4" data-width="4"></div>
+            <div class="disc" id="disc3" data-width="3"></div>
+            <div class="disc" id="disc2" data-width="2"></div>
+            <div class="disc" id="disc1" data-width="1"></div>
         </div>
+
         <div class="tower" id="tower2"></div>
+
         <div class="tower" id="tower3"></div>
-
-    </div>
-
+        </ul>
 
 
 
-    <script src="main.js"></script>
+
+
+
+        <script src="main.js"></script>
 </body>
 
 </html>
