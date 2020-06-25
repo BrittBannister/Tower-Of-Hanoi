@@ -71,8 +71,3 @@ p {
     height: 100px;
     background-color: #084B83;
 }
-
-.disc.selected {
-    opacity: 50%;
-    transform: skewX(20deg)
-}
