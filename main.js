@@ -8,27 +8,26 @@ const pickUpOrDropDisc = function(evt) { //refactored this into one function, ra
         if (disc) {
             console.log('you picked up disc ' + disc.id)
             selected = disc
-            pickedUp = selected
             mode = 'drop'
         } else {
             console.log('no disc picked up')
-        } ///////////////////////////////////////////
+        }
+    } else { //drop
+        if (tower.lastElementChild === null) { //!tower.lastElementChild
+            console.log('you dropped the disc on ' + tower.id)
+            tower.append(selected)
+            mode = 'pickup'
+        } else if (selected.dataset.width > tower.lastElementChild.dataset.width) {
+            console.log('try again')
+            alert('try again!')
+        } else if (selected.dataset.width < tower.lastElementChild.dataset.width) {
+            console.log('you dropped the disc on ' + tower.id)
+            tower.appendChild(selected)
+            mode = 'pickup'
+        }
 
-    } else if (pickedUp.dataset.width < tower.lastElementChild.dataset.width) {
-        tower.appendChild(pickedUp)
     }
-    /////////////////////////////////////////////
-    else { //drop
-        console.log('you dropped the disc on ' + tower.id)
-        tower.append(selected) //this will only work if we are in drop mode (selected)
-        mode = 'pickup'
-    }
-    // let pickedUp = disc
-    // if (pickedUp.dataset.width > tower.lastElementChild.dataset.width) {
-    //     console.log('try again')
-    // } else {
-    //     tower.appendChild(pickedUp)
-    // }
+
     winning();
 }
 

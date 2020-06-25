@@ -1,6 +1,10 @@
-                   TOWER OF HANOI 
+                   TOWER OF HANOI
+        https://brittneybannister.gitlab.io/tower-of-hanoi 
         BRITTNEY BANNISTER && CHRISTY BODNAR
-                        PLAN        
+                        PLAN  
+
+ **Recieved help from Randy's Demo on the click handler code and refactoring into one big function**
+ **Recieved help from Eric Hanson on the comparision statement lines 16-23. I was close orginially and He helped me figure it out.**      
 
 1. Way to select disc from the top of tower
         1. attach a click handler to pick up top disc of each tower
