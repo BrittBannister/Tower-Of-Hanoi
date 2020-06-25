@@ -14,6 +14,8 @@ const pickUpOrDropDisc = function(evt) { //refactored this into one function, ra
         }
     } else { //drop
         if (tower.lastElementChild === null) { //!tower.lastElementChild
+            ///This part-if you look at the console log you can see when you have a disc selected and if you arent able to move a disc ontop of another disc
+            //becuase it's too big, you have to place it back where it was before you can pick up another.
             console.log('you dropped the disc on ' + tower.id)
             tower.append(selected)
             mode = 'pickup'
